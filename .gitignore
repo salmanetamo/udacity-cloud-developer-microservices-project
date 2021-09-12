@@ -1,0 +1,7 @@
+udagram-api-user/.env
+udagram-api-feed/.env
+
+deployment/aws-secret.yaml
+deployment/env-configmap.yaml
+deployment/env-secret.yaml
+set_env.sh

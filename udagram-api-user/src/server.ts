@@ -1,3 +1,4 @@
+require('dotenv').config();
 import cors from 'cors';
 import express from 'express';
 import {sequelize} from './sequelize';
@@ -10,7 +11,6 @@ import {V0_USER_MODELS} from './controllers/v0/model.index';
 
 
 (async () => {
-  await sequelize.addModels(V0_FEED_MODELS);
   await sequelize.addModels(V0_USER_MODELS);
 
   console.debug("Initialize database connection...");
