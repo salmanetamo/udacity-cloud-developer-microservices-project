@@ -17,6 +17,15 @@ spec:
       containers:
       - name: udagram-reverseproxy
         image: salmanetamo/udagram-reverseproxy
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
-
+        imagePullPolicy: Always          
+        resources:
+          requests:
+            memory: "1024Mi"
+            cpu: "250m"
+          limits:
+            memory: "8192Mi"
+            cpu: "500m"
+      restartPolicy: Always
